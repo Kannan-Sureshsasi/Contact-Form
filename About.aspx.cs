@@ -44,12 +44,6 @@ namespace Contact_Form
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected < 0)
                         {
-                            // Clear form fields
-                            txtFullName.Text = string.Empty;
-                            txtEmailAddress.Text = string.Empty;
-                            txtSubject.Text = string.Empty;
-                            txtMessage.Text = string.Empty;
-
                             // Display success message
                             ErrorMessageLabel.Visible = false; // Hide error message label
                             SuccessMessageLabel.Text = "Submitted Successfully!";
